@@ -21,8 +21,23 @@
   
   ###### 配置了QoS的网络环境，增加了网络性能的可预知性，并能够有效地分配网络带宽，更加合理地利用网络资源。
   
+  通常QoS提供以下三种服务模型：
+  
+    Best-Effort service（尽力而为服务模型）
+    
+    Integrated service（综合服务模型，简称Int-Serv）
+    
+    Differentiated service（区分服务模型，简称Diff-Serv）
+  
+  Best-Effort服务模型是一个单一的服务模型，也是最简单的服务模型。对Best-Effort服务模型，网络尽最大的可能性来发送报文。但对延时、可靠性等性能不提供任何保证。
+  
+  Best-Effort服务模型是网络的缺省服务模型，通过FIFO（first in first out 先入先出）队列来实现。它适用于绝大多数网络应用，如FTP、E-Mail等。
+  
   在mqtt协议中，QoS分成了三个级别：
   
-  QoS0：最多分发一次
-  QoS1：至少分发一次
-  QoS2：只分发一次
+  QoS 0：最多分发一次
+  
+  QoS 1：至少分发一次
+  
+  QoS 2：只分发一次
+  
